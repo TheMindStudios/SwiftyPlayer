@@ -1,0 +1,22 @@
+{
+  "name": "SwiftyPlayer",
+  "version": "0.1.0",
+  "summary": "A short description of SwiftyPlayer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Sergey Degtyar/SwiftyPlayer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Sergey Degtyar": "degtyarserg@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Sergey Degtyar/SwiftyPlayer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SwiftyPlayer/Classes/**/*"
+}

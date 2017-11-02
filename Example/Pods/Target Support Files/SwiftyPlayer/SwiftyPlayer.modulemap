@@ -1,0 +1,6 @@
+framework module SwiftyPlayer {
+  umbrella header "SwiftyPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}
