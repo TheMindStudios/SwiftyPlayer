@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftyPlayer_Example' do
+  pod 'SwiftyPlayer', :path => '../'
+
+  target 'SwiftyPlayer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
