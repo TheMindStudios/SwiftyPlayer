@@ -45,64 +45,64 @@ player.bufferingDelegate = self
 
 ```swift
 
-	player.URL = playerURL
-	or 
-	player.playerItem = playerItem
-	or
-	player.asset = playerAsset
+player.URL = playerURL
+//or 
+player.playerItem = playerItem
+//or
+player.asset = playerAsset
 
 ```
 
 5. Create a custom interface with controls and set relevant commands to `SwiftyPlayer`
 
 ```swift
-    @IBAction func play() {
-        player.play()
-    }
-    
-    @IBAction func pause() {
-        player.pause()
-    }
+@IBAction func play() {
+    player.play()
+}
 
-    @IBAction func didSlide(_ sender: UISlider) {
-	    player.seek(to: sender.value, shouldAutoPlay: true)
-    }
+@IBAction func pause() {
+    player.pause()
+}
+
+@IBAction func didSlide(_ sender: UISlider) {
+    player.seek(to: sender.value, shouldAutoPlay: true)
+}
 ```
 
 6. Add a handler for `PlayerDelegate` if need
 
 ```swift
-    func player(_ player: Player, didUpdateTime timePlayed: Double) {
-    	// handle to update played time
-    	print(timePlayed)
-    }
+func player(_ player: Player, didUpdateTime timePlayed: Double) {
+	// handle to update played time
+	print(timePlayed)
+}
 
-    func player(_ player: Player, didChangePlaybackState playbackState: PlaybackState) {
-    	// handle to update playbackState
-    	print(playbackState)
-    }
+func player(_ player: Player, didChangePlaybackState playbackState: PlaybackState) {
+	// handle to update playbackState
+	print(playbackState)
+}
 
-    func playerDidPlayToEnd(_ player: Player) {
-    	// handle an event when player did play to end
-    }
+func playerDidPlayToEnd(_ player: Player) {
+	// handle an event when player did play to end
+}
 
-    func playerDidUpdatePlayerItem(_ player: Player) {
-    	// handle an event when player did update item
-    }
+func playerDidUpdatePlayerItem(_ player: Player) {
+	// handle an event when player did update item
+}
 ```
 
 6. Add a handler for `PlayerBufferingDelegate` if need
 
 ```swift
-    func player(_ player: Player, didChangeBufferingState bufferingState: BufferingState) {
-		// handle to update bufferingState
-		print(bufferingState)
-    }
+func player(_ player: Player, didChangeBufferingState bufferingState: BufferingState) {
+	// handle to update bufferingState
+	print(bufferingState)
+}
 
-    func playerDidUpdateBufferingProgress(_ player: Player) {
-		// handle to update bufferingProgress
-		print(player.bufferingProgress)
-    }
+func playerDidUpdateBufferingProgress(_ player: Player) {
+	// handle to update bufferingProgress
+	print(player.bufferingProgress)
+}
 ```
 
 ## Installation with CocoaPods
@@ -119,7 +119,7 @@ To integrate `SwiftyPlayer` into your Xcode project using CocoaPods, specify it 
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '10.0'
+platform :ios, '9.0'
 use_frameworks!
 
 target 'TargetName' do
