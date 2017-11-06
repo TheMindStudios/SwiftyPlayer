@@ -8,7 +8,7 @@
 
 [![TheMindStudios](https://github.com/TheMindStudios/WheelPicker/blob/master/logo.png?raw=true)](https://themindstudios.com/)
 
-A simple yet customizable player used to manage the playback and timing of a media asset. It helps to create a custom interface to control the player’s transport behavior such as its ability to play, pause, change the playback rate, and seek to various points in time within the media’s timeline. Or you can also set AVPlayerViewControllerPlayer for default interface. You can use an SwiftyPlayer to play local and remote file-based media, such as QuickTime movies and MP3 audio files, as well as audiovisual media served using HTTP Live Streaming.
+A simple yet customizable player used to manage the playback and timing of a media asset. SwiftyPlayer helps to create a custom interface to control the player’s transport behavior such as its ability to play, pause, change the playback rate, and seek to various points in time within the media’s timeline. Or you can also set AVPlayerViewControllerPlayer for default interface. You can use an SwiftyPlayer to play local and remote file-based media, such as QuickTime movies and MP3 audio files, as well as audiovisual media served using HTTP Live Streaming.
 
 ## Features
 
@@ -26,7 +26,7 @@ A simple yet customizable player used to manage the playback and timing of a med
 ```swift
 import SwiftyPlayer
 ```
-2. Instantiate and set playerLayer and videoGravity
+2. Instantiate and set `playerLayer` and `videoGravity`
 
 ```swift
 let player = Player()
@@ -34,14 +34,14 @@ player.setPlayer(to: playerLayerView.playerLayer)
 playerLayerView.playerLayer.videoGravity = .resizeAspect
 ```
 
-3. Set delegate and bufferingDelegate if need
+3. Set `delegate` and `bufferingDelegate` if need
 
 ```swift
 player.delegate = self
 player.bufferingDelegate = self
 ```
 
-4. Set the URL or AVPlayerItem or AVAsset to player
+4. Set the `URL` or `AVPlayerItem` or `AVAsset` to player
 
 ```swift
 
@@ -53,7 +53,7 @@ player.bufferingDelegate = self
 
 ```
 
-5. Create a custom interface with controls and set relevant commands to SwiftyPlayer
+5. Create a custom interface with controls and set relevant commands to `SwiftyPlayer`
 
 ```swift
     @IBAction func play() {
@@ -69,7 +69,7 @@ player.bufferingDelegate = self
     }
 ```
 
-6. Add a handler for PlayerDelegate if need
+6. Add a handler for `PlayerDelegate` if need
 
 ```swift
     func player(_ player: Player, didUpdateTime timePlayed: Double) {
@@ -91,7 +91,7 @@ player.bufferingDelegate = self
     }
 ```
 
-6. Add a handler for PlayerBufferingDelegate if need
+6. Add a handler for `PlayerBufferingDelegate` if need
 
 ```swift
     func player(_ player: Player, didChangeBufferingState bufferingState: BufferingState) {
@@ -107,7 +107,7 @@ player.bufferingDelegate = self
 
 ## Installation with CocoaPods
 
-To install via CocoaPods add this lines to your Podfile. You need CocoaPods v. 1.3.1 or higher
+To install via `CocoaPods` add this lines to your `Podfile`. You need `CocoaPods` v. 1.3.1 or higher
 
 ```bash
 $ gem install cocoapods
