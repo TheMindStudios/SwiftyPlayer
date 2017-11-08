@@ -8,8 +8,6 @@
 
 [![TheMindStudios](https://github.com/TheMindStudios/WheelPicker/blob/master/logo.png?raw=true)](https://themindstudios.com/)
 
-Swift Player based on the AVPlayer and give to you a really comfortable interface for player and buffering state observations.
-
 A comfortable player used to manage the playback and timing of a media asset. 
 Swift Player based on the AVPlayer and give to you a really comfortable interface for general player, timing and buffering state observations. You can easy create custom interface to control the player’s transport behavior such as its ability to play, pause, change the playback rate, and seek to various points in time within the media’s timeline. And you can also set AVPlayerViewControllerPlayer as default interface. You can use an SwiftyPlayer to play local and remote file-based media, such as QuickTime movies and MP3 audio files, as well as audiovisual media served using HTTP Live Streaming.
 
