@@ -8,17 +8,20 @@
 
 [![TheMindStudios](https://github.com/TheMindStudios/WheelPicker/blob/master/logo.png?raw=true)](https://themindstudios.com/)
 
-A simple yet customizable player used to manage the playback and timing of a media asset. SwiftyPlayer helps to create a custom interface to control the player’s transport behavior such as its ability to play, pause, change the playback rate, and seek to various points in time within the media’s timeline. Or you can also set AVPlayerViewControllerPlayer for default interface. You can use an SwiftyPlayer to play local and remote file-based media, such as QuickTime movies and MP3 audio files, as well as audiovisual media served using HTTP Live Streaming.
+Swift Player based on the AVPlayer and give to you a really comfortable interface for player and buffering state observations.
+
+A comfortable player used to manage the playback and timing of a media asset. 
+Swift Player based on the AVPlayer and give to you a really comfortable interface for general player, timing and buffering state observations. You can easy create custom interface to control the player’s transport behavior such as its ability to play, pause, change the playback rate, and seek to various points in time within the media’s timeline. And you can also set AVPlayerViewControllerPlayer as default interface. You can use an SwiftyPlayer to play local and remote file-based media, such as QuickTime movies and MP3 audio files, as well as audiovisual media served using HTTP Live Streaming.
 
 ## Features
 
 - [x] Easy to use
-- [x] Full customization the control player's
+- [x] Support all actions for player's control
 - [x] General State Observations through methods of delegate
 - [x] Timed State Observations through methods of delegate
 - [x] Buffering State Observations through methods of delegate
-- [x] Usage all power AVPlayer
-- [x] Ability to set AVPlayerViewController
+- [x] Using all power AVPlayer
+- [x] Ability to set AVPlayerViewController as default interface
 
 ## Usage
 1. Import `SwiftyPlayer` module to your `ViewController` class
@@ -73,21 +76,21 @@ player.asset = playerAsset
 
 ```swift
 func player(_ player: Player, didUpdateTime timePlayed: Double) {
-	// handle to update played time
+	// to handle timePlayed
 	print(timePlayed)
 }
 
 func player(_ player: Player, didChangePlaybackState playbackState: PlaybackState) {
-	// handle to update playbackState
+	// to handle playbackState
 	print(playbackState)
 }
 
 func playerDidPlayToEnd(_ player: Player) {
-	// handle an event when player did play to end
+	// to handle player's event
 }
 
 func playerDidUpdatePlayerItem(_ player: Player) {
-	// handle an event when player did update item
+	// to handle player's item
 }
 ```
 
@@ -95,12 +98,12 @@ func playerDidUpdatePlayerItem(_ player: Player) {
 
 ```swift
 func player(_ player: Player, didChangeBufferingState bufferingState: BufferingState) {
-	// handle to update bufferingState
+	// to handle bufferingState
 	print(bufferingState)
 }
 
 func playerDidUpdateBufferingProgress(_ player: Player) {
-	// handle to update bufferingProgress
+	// to handle bufferingProgress
 	print(player.bufferingProgress)
 }
 ```
