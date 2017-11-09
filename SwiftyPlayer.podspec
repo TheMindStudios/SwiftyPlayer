@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'SwiftyPlayer/Classes/**/*'
+  s.source_files = 'SwiftyPlayer/Classes/Core/*.swift'
+  s.frameworks = ['AVFoundation', 'CoreMedia', 'AVKit']
 
 end
