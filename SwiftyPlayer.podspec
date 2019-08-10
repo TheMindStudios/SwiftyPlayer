@@ -23,5 +23,5 @@ Pod::Spec.new do |s|
   s.source_files = 'SwiftyPlayer/Classes/Core/*.swift'
   s.frameworks = ['AVFoundation', 'CoreMedia', 'AVKit']
   s.swift_version = '4.0'
-  
+
 end
