@@ -1,22 +1,28 @@
 {
   "name": "SwiftyPlayer",
-  "version": "0.1.0",
-  "summary": "A short description of SwiftyPlayer.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Sergey Degtyar/SwiftyPlayer",
+  "version": "1.0.0",
+  "summary": "A simple yet customizable player used to manage the playback and timing of a media asset. Works on iOS 9 and higher",
+  "description": "SwiftyPlayer helps to create a custom interface to control the player’s transport behavior such as its ability to play, pause, change the playback rate, and seek to various points in time within the media’s timeline",
+  "social_media_url": "https://twitter.com/TheMindStudios",
+  "homepage": "https://github.com/TheMindStudios/SwiftyPlayer",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Sergey Degtyar": "degtyarserg@gmail.com"
+    "Max Mashkov": "max@themindstudios.com"
   },
   "source": {
-    "git": "https://github.com/Sergey Degtyar/SwiftyPlayer.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/TheMindStudios/SwiftyPlayer.git",
+    "tag": "1.0.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "SwiftyPlayer/Classes/**/*"
+  "source_files": "SwiftyPlayer/Classes/Core/*.swift",
+  "frameworks": [
+    "AVFoundation",
+    "CoreMedia",
+    "AVKit"
+  ]
 }
